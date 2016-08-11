@@ -1,0 +1,152 @@
+% AM-CV : Latex CV
+% Version 1.0
+% Copyright Chao Huang 2016 <huangchao0416@gmail.com>
+%
+% Created using a combination of these two freely available CV templates
+% https://www.sharelatex.com/templates/cv-or-resume/professional-cv
+% https://www.sharelatex.com/templates/cv-or-resume/kjh-vita
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{curriculum}
+\usepackage{info}
+
+%--------------------BEGIN DOCUMENT----------------------%
+
+\begin{document}
+
+%----------------------HEADER----------------------------%
+
+\hfill
+\begin{minipage}[t]{2.95in}
+ \flushright
+ {\footnotesize  \href{\mydepartmentemail}{\mydepartment} \\
+                 \mydirection \\
+                 \myaddrone \\ }
+\end{minipage}
+%
+\begin{minipage}[t]{1.8in}
+  \flushright
+  {\footnotesize  \href{\myweb}{\myweb} \, \faGlobe \\
+                  \href{mailto:\myemail}{\myemail} \, \faEnvelope \\
+                  \small \textbf{\myphone} \, \faPhone}
+%  {\scriptsize  \texttt{}{\mytwitter}} \, \faTwitter }  \\
+\end{minipage}
+
+\medskip
+
+%----------------------TITLE----------------------------%
+
+\noindent{\fontsize{40}{50}\selectfont \textsc{\myauthor}}
+
+%----------------------EDUCATION------------------------%
+
+\section{Education Experience}
+
+\begin{tabular}{r|p{15cm}}	
+%
+\textsc{Current} 	& Master in \textsc{Computer Science and Technology} \\
+2014-2017 			& \textbf{Southeast University}, Nanjing, China \\
+                    & Comprehensive results: Above 80 (top 26\% in class)\\
+%
+\multicolumn{2}{c}{} \\
+2009-2013 			& Bachelor in \textsc{Software Engineering} \\
+					& \textbf{Xi'an University of Technology}, Xi'an, China\\
+					& Comprehensive results: Above 80 (top 10\% in class)\\
+%
+\end{tabular}
+
+%-------------COMPUTER SKILLS--------------------------%
+
+\section{Professional Skills}
+\begin{tabular}{R{3.9cm}l}
+%
+\textbf{Programming Language:}		& Java (extensive use), C/C++/C\#, HTML/CSS/Javascript (working knowledge) \\
+\textbf{Algorithms \& Theory:}	    & Semantic Web, Machine Learning, Natural Language Processing\\
+\textbf{Tools \& Platforms:}	    & Git, SVN, Eclipse/MyEclipse, Visual Studio, CodeBlocks \\
+\textbf{OS \& Databases:}			& Windows, Linux(Ubuntu/Redhat), MySQL, SQL Server, Neo4j, Jena \\
+%
+\end{tabular}
+
+%----------------------Internship Experience-------------------%
+\section{Internship Experience}
+
+\begin{tabular}{R{3.2cm}p{13cm}}
+%
+ \textsc{Jun 2016 - Sep 2016} 		& \textbf{Comapny} : Microsoft Corporation  \hspace{15 mm} \textbf{Role} : Software Engineer Intern \\
+ 							& \textbf{Responsibility}  : \normalsize{Mainly responsible for the designment and development of some features on the \emph{ontology mapping tool} .  }\\
+ 							& \textbf{Outcome}  : \normalsize{The tool is designed to map a schema which is extracted from a web site to the whole satori ontology schema, and generate the mapping rules for the subsequent entity ingestion and matching process automatically. During the internship, I completed the pagination and search module, and realized the features of mapping rules auto completion and error detection. } \\
+%
+ \multicolumn{2}{c}{} \\
+%
+\end{tabular}
+
+%-----------------WORK EXPERIENCE-----------------------%
+
+\section{Project Experience}
+\begin{tabular}{R{3.2cm}|p{13cm}}
+%
+ \textsc{Oct 2015 - Feb 2016} 		& \textsc{A Why-not Question Answering System over RDF Data} \\
+ 							& \small{Given an input query and why-not questions provided by users, the system construct a new query with graph pattern matching method which can return the user-expected items. Then an explaining procedure is executed to compute the explanations.} \\
+                            & \emph{Java, Jena, Lucene, Pellet, Neo4j} \\
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Jul 2015 - Sep 2015} 		& \textsc{Visualization for Domain-specific Knowledge Graph} \\
+ 							& \small{For a domain-specific knowledge graph, the project seeks a visualization method to present the figure graph and event graph, which can convey the relations intuitively and convenient for users to discovery some latent information with interaction.}\\
+                            & \emph{Java (SpringMVC Framework), Html/Css/Javascript, Bootstrap, Mysql} \\
+%
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Jun 2015 - Jul 2015} 		& \textsc{Naive Bayes - based multi-class Chinese text classification} \\
+ 							& \small{Training a naive bayes model on the news corpus from Sogou laboratory, and predicate the class of a new article. The precision of prediction is about 85.7\% and the recall is about 83.6\%. }\\
+                            & \emph{Java, IKAnalyzer} \\
+%
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Mar 2015 - May 2015} 		& \textsc{Semantic Searching System} \\
+ 							& \small{Given a natural language query, the system first transforms the information stored in a relational database to an ontology. Then, it parses the input query and convert to a sparql query, executes the query over the ontology to obtain results and presents to users.  }\\
+                            & \emph{Java, MyEclipse, Mysql, D2R} \\
+%
+\end{tabular}
+
+%------PUBLICATIONS, CONFERENCES, AND WORKSHOPS--------%
+
+\section{Academic Workshops}
+
+\begin{tabular}{rp{15cm}}
+\textsc{Apr.} 2016  & \textsc{Advance in Knowledge Graph and Question Answering Systems}, Beijing, China \\
+\textsc{Dec.} 2015  & \textsc{Advance in Knowledge Graph}, (CCFADL), Beijing, China \\
+\textsc{Nov.} 2015 	& \textsc{Machine Learning Application(MLA), NLP Forum}, Nanjing, China \\
+%
+\end{tabular}
+
+%----------------------Language Skills-----------------------%
+
+\section{Language Skills}
+
+
+\begin{tabular}{R{3.1cm}l}
+
+\textbf{English:} 		& Good at speaking and writing, skilled in reading comprehension. \\
+
+\textbf{Certification:}	& CET-4 (score: 465)   \ \ \ \ \     CET-6 (score: 484) \\
+
+\end{tabular}
+
+%----------------------Awards-----------------------%
+
+\section{Awards}
+
+\begin{tabular}{R{2.1cm}l}
+\textsc{Jul. 2016} 	& ``Most Creative Project'' in Microsoft Suzhou hackathon \\
+\textsc{Nov. 2015} 	& ``Three-good graduate student'' honorary title \\
+\textsc{Jun. 2015} 	& ``Outstanding party member'' honorary title \\
+\textsc{Apr. 2013} 	& The middle third class scholarship(top 10\% in school) \\
+\textsc{Apr. 2012} 	& The middle third class scholarship(top 10\% in school), ``Three-good student'' honorary title \\
+\textsc{Sep. 2011} 	& ``Excellent league member'' honorary titles \\
+\textsc{Mar. 2011} 	& National Encouragement scholarship(top  5\% in school), ``Good pacesetter'' \\
+\end{tabular}
+
+%-----------------END DOCUMENT--------------------------%
+
+\end{document}

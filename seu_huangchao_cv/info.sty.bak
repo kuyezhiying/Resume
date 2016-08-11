@@ -1,0 +1,35 @@
+% AM-CV : Latex CV
+% Version 1.0
+% Copyright Andrew Mellor 2016 <mellor91@hotmail.co.uk>
+%
+% Created using a combination of these two freely available CV templates
+% https://www.sharelatex.com/templates/cv-or-resume/professional-cv
+% https://www.sharelatex.com/templates/cv-or-resume/kjh-vita
+
+\ProvidesPackage{info}
+
+\def\myauthor{Chao Huang}
+\def\mytitle{Curriculum Vitae}
+
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+
+\def\myaffiliation{Southeast University}
+\def\mydepartment{Department of computer sicence and technology}
+\def\mydepartmentemail{http://cse.seu.edu.cn/CSE/UI/Default.aspx}
+\def\myaddrone{Nanjing, Jiangsu}
+\def\mydirection{Artificial Intelligence}
+\def\myaddrtwo{Xi'an, Shaanxi}
+\def\myaddrthree{Address Three}
+
+
+\def\myemail{huangchao0416@gmail.com}
+\def\myweb{https://github.com/kuyezhiying}
+\def\myphone{(+86)151-5056-1061}
+\def\mytwitter{@huangchao}
+
+\def\myversion{}
+\def\myrevision{}

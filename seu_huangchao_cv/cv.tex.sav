@@ -1,0 +1,211 @@
+% AM-CV : Latex CV
+% Version 1.0
+% Copyright Andrew Mellor 2016 <mellor91@hotmail.co.uk>
+%
+% Created using a combination of these two freely available CV templates
+% https://www.sharelatex.com/templates/cv-or-resume/professional-cv
+% https://www.sharelatex.com/templates/cv-or-resume/kjh-vita
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{curriculum}
+\usepackage{info}
+
+%--------------------BEGIN DOCUMENT----------------------%
+
+\begin{document}
+
+%----------------------HEADER----------------------------%
+
+\hfill
+\begin{minipage}[t]{2.95in}
+ \flushright 
+ {\footnotesize  \href{\mydepartmentemail}{\mydepartment} \\ 
+                 \mydirection \\
+                 \myaddrone \\ }
+\end{minipage}
+%
+\begin{minipage}[t]{1.8in}
+  \flushright 
+  {\footnotesize  \href{\myweb}{\myweb} \, \faGlobe \\
+                  \href{mailto:\myemail}{\myemail} \, \faEnvelope \\
+                  \myphone \, \faPhone}
+%  {\scriptsize  \texttt{}{\mytwitter}} \, \faTwitter }  \\
+\end{minipage}
+
+\medskip
+
+%----------------------TITLE----------------------------%
+
+\noindent{\fontsize{40}{50}\selectfont \textsc{\myauthor}}
+
+%----------------------EDUCATION------------------------%
+
+\section{Education Experience}
+
+\begin{tabular}{r|p{15cm}}	
+%
+\textsc{Current} 	& Master Candidate in \textsc{Computer Science and Technology} \\
+2014-2017 			& \textbf{Southeast University}, Nanjing, China \\
+					& Thesis: Artificial Intelligence \\
+					& Advisor: Prof. Guilin Qi \\
+                    & Comprehensive results: Above 80 (top 20\% in class)\\
+%
+\multicolumn{2}{c}{} \\
+2009-2013 			& Bachelor in \textsc{Software Engineering} \\
+					& \textbf{Xi'an University of Technology}, Xi'an, China\\
+					& Comprehensive results: Above 80 (top 10\% in class)\\
+%
+\end{tabular}
+
+%-------------COMPUTER SKILLS--------------------------%
+
+\section{Professional Skills}
+\begin{itemize}
+\item this is 1
+\item this is 2
+\item this is 3
+\end{itemize}
+
+\begin{tabular}{R{3.9cm}l}
+%
+\textbf{Programming Language:}		& Java (extensive use), C/C++ (familiar), HTML/CSS/Javascript (working knowledge) \\
+\textbf{Version Control:}	& Git (working knowledge), SVN (familiar) \\
+\textbf{Databases:}			& mySQL, SQL Server, Neo4j, Jena \\
+\textbf{Platforms:}			& Eclipse/MyEclipse, Visual Studio, CodeBlocks\\
+\textbf{Operating Systems:}	& Windows, Linux (Ubuntu / Redhat)\\
+%
+\end{tabular}
+
+%------PUBLICATIONS, CONFERENCES, AND WORKSHOPS--------%
+
+\section{Research \& Workshops}
+
+\begin{tabular}{rp{15cm}}
+%
+\textsc{Feb.} 2016 	& \textsc{Answering Why-not Questions on SPARQL Queries over RDF Data} \\
+					& {\footnotesize Summary: \textit{System users may be frustrated when they found their expected item is not in the result set after executing a query. The why-not question is used to describe this situation. Existing techniques for why-not questions are based on the manipulation identification and query refinement, which are mainly applicable in traditional relational databases. Such methods do not consider the syntax information of the query structure and are always expensive with the explaining process. In order to fully
+utilize the syntax and efficiently explain why-not questions for the RDF data users, we propose an explanation framework which is based on graph pattern matching process while adding the
+similarity as heuristic information, to provide quality explanations.}} \\
+%
+\textsc{Dec.} 2015  & \textsc{Advance in Knowledge Graph}, Beijing, China \\
+\textsc{Aug.} 2015 	& \textsc{Machine Learning Application}, Nanjing, China \\
+%
+\end{tabular}
+
+%-----------------WORK EXPERIENCE-----------------------%
+
+\section{Project Experience}
+\begin{tabular}{R{3.1cm}|p{13cm}}
+%
+ \textsc{Nov 2015 - Jan 2016} 		& \textsc{A Why-not Question Answering System over RDF Data} \\
+ 							& \emph{Developing and Testing} \\
+ 							& \footnotesize{This system is a proto framework developed while doing the above research. This project mainly realize the following function: given an input query and why-not questions provided by users, the system construct a new query with graph pattern matching method which can return the user-expected items. Then an explaining procedure is executed to compute explanations for users.} \\
+                            & \emph{Java, Jena, Lucene, Neo4j} \\
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Jul 2015 - Oct 2015} 		& \textsc{Visualization for Domain-specific Knowledge Graph} \\
+ 							& \emph{Module designing and Developing}\\
+ 							& \footnotesize{For a domain-specific knowledge graph, the relationship between person, events may be complicated. This project seeks a visualization method to present the figure graph and event graph, which can convey the relations intuitively and convenient for users to discovery some latent information with interaction.}\\
+                            & \emph{Java (SSH Framework), Html/Css/Javascript, Bootstrap, Mysql} \\
+%
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Mar 2015 - Jun 2015} 		& \textsc{Semantic Searching System} \\
+ 							& \emph{Module designing and Developing}\\
+ 							& \footnotesize{This project aims to understand the hidden user intention while searching the database. The system first transforms the information stored in a relational database to an ontology. Secondly, it parse the input natural language query and convert to a sparql query with identical semantics. At last, the query is executed over the ontology and the results is presented to users.  }\\
+                            & \emph{Java, MyEclipse, Mysql, D2R} \\
+%
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Jan 2014 - Feb 2014} 		& \textsc{A Parser to IMDB} \\
+ 							& \emph{Developing and Testing}\\
+ 							& \footnotesize{Given a url for an IMDB webpage, parsing the url and crawling the movie review and basic information in the page.}\\
+                            & \emph{C\# (Windows Form Application), PHP + WAMP} \\
+%
+\end{tabular}
+
+\section{}
+\begin{tabular}{R{3.1cm}|p{13cm}}
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Apr 2013 - Jun 2013} 		& \textsc{Cost Analysis Information Management System} \\
+ 							& \emph{Module Developing and Unit Testing}\\
+ 							& \footnotesize{This system is a part of the Gaoyou Golf Management System. The requirement is that a cost card for canteen and store management is utilized to analyse the cost information of foods and goods. The income for every month needs to be presented as report forms. }\\
+                            & \emph{C\#, Sql Server 2008} \\
+%
+%
+ \multicolumn{2}{c}{} \\
+ \textsc{Jan 2013 - Feb 2013} 		& \textsc{Point-to-Point Bluetooth Chatting Application} \\
+ 							& \emph{Developing and Testing}\\
+ 							& \footnotesize{This project is to develop an android application for bluetooth chatting. The functions contains: searching the near bluetooth device, realizing the point-to-point chatting style, supporting clean text and backspace, storing the chatting records to a certain directory. }\\
+                            & \emph{Java, Android} \\
+%
+\end{tabular}
+
+
+%----------------------MISCELLANEOUS-------------------%
+
+\section{Internship Experience \& Social Practice}
+
+\begin{tabular}{R{3.1cm}p{13cm}}
+%
+\textbf{Internship:} 		& \textsc{Comapny} : INSIGMA TECHNOLOGY CO., LTD.  (2014-16)\\
+                        & \textsc{Role} : Leader of Java Development Group \\
+                        & \textsc{Responsibility} : \footnotesize{Develop a \textbf{personal account savings system} with a group of six member, the system requires to realize the basic operations concluding adding, deleting, querying and modifying the users and account information. Besides, the functions of saving money, withdraw money and transfer account should be supported.  }\\
+                        & \textsc{Technology} : Java, MyEclipse, Mysql \\
+						& \\
+%
+\textbf{Social Practice:} 		& Volunteer for on-the-spot supervisor of Graduate Record Examination \\
+                        & Volunteer for the first national cloud computing application and innovation contest \\
+						& Volunteer for the ``Caring old man, sending warmth to the old man'' activity\\
+                        & Working at college research council, organizing various academic activities \\
+%
+\end{tabular}
+
+%----------------------INTERESTS-----------------------%
+
+\section{Interests and Activities}
+
+
+\begin{tabular}{R{3.1cm}ll}
+%
+\textbf{Academic:} 		& Maching Learning 		& Natural Language Processing \\
+						& Question Answering    & Knowledge Representation \\
+%
+& & \\
+%
+\textbf{Recreational:}	& Basketball 	 & Table Tennis \\
+                        & Badminton      & Billiards \\
+%
+\end{tabular}
+
+%----------------------Language Skills-----------------------%
+
+\section{Language Skills}
+
+
+\begin{tabular}{R{3.1cm}l}
+
+\textbf{English:} 		& Good at speaking and writing, skilled in reading comprehension. \\
+
+\textbf{Certification:}	& CET-4 (score: 465)   \ \ \ \ \     CET-6 (score: 484) \\
+
+\end{tabular}
+
+%----------------------Awards-----------------------%
+
+\section{Awards}
+
+\begin{tabular}{R{2.1cm}l}
+\textsc{Mar. 2011} 	& National Encouragement scholarship(top  5\% in school), ``Good pacesetter'' \\
+\textsc{Sep. 2011} 	& ``Excellent league member'' honorary titles \\
+\textsc{Apr. 2012} 	& The middle third class scholarship(top 10\% in school), ``Three-good student'' honorary title \\
+\textsc{Apr. 2013} 	& The middle third class scholarship(top 10\% in school) \\
+\textsc{Jun. 2015} 	& ``Outstanding party member'' honorary title \\
+\textsc{Nov. 2015} 	& ``Three-good graduate student'' honorary title \\
+\end{tabular}
+
+%-----------------END DOCUMENT--------------------------%
+
+\end{document}
