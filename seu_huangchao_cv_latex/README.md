@@ -1,4 +1,4 @@
-# AM-CV
+# HuangChao-CV
 
 ## *A Curriculum Vitae Template written in Latex*
 
